@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, orange 0 40%, rgb(136, 54, 0) 40% 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container-center {   
+  background-color: lightgoldenrodyellow;      
+  display: grid; 
+  justify-items: center;
+  place-items: center;
+  grid-template-rows: 5fr 3fr 2fr 3fr ;  
+  row-gap: 1rem;   
+  width: 40vw;
+  box-shadow: 3px 3px 13px -1px rgba(0, 0, 0, 0.9); 
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .container-center { 
+    width: 60vw;  
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 0.1rem; 
+
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 700;  
+  margin-top: 1.5rem; 
+  letter-spacing: 0.1rem;
+  text-shadow: #23395e 1px 0 10px;
+}
+
+@media screen and (max-width: 1160px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.input-el {
+  padding: 0 0.7rem;
+  width: 30vw;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: 0.1rem solid rgba(255, 166, 0, 0.637) ;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+@media screen and (max-width: 1160px) {
+  .input-el {
+    width: 50vw;
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+}
+
+.input-el::placeholder {
+  text-align: left;
+}
+
+.input-el:focus {
+  outline: none;
+}
+
+.alert-el {      
+  font-size: 1rem;  
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 1160px) {
+  .alert-el {
+    font-size: 0.7rem;    
+  }
+}
+
+.alert-correct {  
+  color: green;
+}
+
+.alert-wrong {  
+  color: red;
+}
+
+.control {   
+  align-items: center;   
+}
+
+.check-btn {
+  width: 10vw;
+  height: 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;   
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;	
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;  
+  margin: 1rem 0 2rem 0; 
+}
+
+@media screen and (max-width: 960px) {
+  .check-btn {
+    font-size: 0.7rem; 
+    width: 5rem;   
+  }
+}
+
+.check-btn:hover {
+  background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
